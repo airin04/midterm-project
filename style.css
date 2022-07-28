@@ -17,7 +17,6 @@ h1 {
 .nav-bar {
     height: 8vh;
     width: 100vw;
-    position: fixed;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -25,9 +24,6 @@ h1 {
     gap:100px;
     }
 
-.nav-links {
-    flex: 1.5;
-}
 
 .contact-button {
     background-color: #072AC8;
@@ -35,4 +31,23 @@ h1 {
     color:  white;
     padding: 15px 32px;
     text-align: center;
+}
+
+.hero-section {
+    padding: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.hero-text {
+    width: 30vw;
+}
+
+.hero {
+    height: 70vh;
+}
+
+.cards {
+    height:10vh;
 }

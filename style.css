@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
 * {
-    margin: 0;
+    margin: 0px;
     padding: 0;
     font-family: 'Roboto';
     text-decoration: none;
-    background-color: #F2F4FC;
+    background-color: #ECF7FF;
   }
+
+body {
+    margin-left: 150px;
+    margin-right: 150px;
+    font-weight: 400;
+    size: 20px;
+    line-height: 30px;
+
+}
 
 h1 {
     font-style: normal;
@@ -15,15 +24,20 @@ h1 {
 }
 
 .nav-bar {
-    height: 8vh;
-    width: 100vw;
+    height: 10vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-around;
-    gap:100px;
+    justify-content: space-between;
     }
 
+.nav-links {
+    width: 30vw;
+    display:flex;
+    justify-content: space-around;
+}
 
 .contact-button {
     background-color: #072AC8;
@@ -34,20 +48,46 @@ h1 {
 }
 
 .hero-section {
-    padding: 50px;
+
     display: flex;
-    flex-flow: row nowrap;
     align-items: center;
+    justify-content: space-between;
+    padding-right: 50px;
 }
 
 .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
     width: 30vw;
 }
 
-.hero {
-    height: 70vh;
+.hero-img-container {
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.cards {
-    height:10vh;
+#hero-img {
+    position: relative;
+    width: 600px;
+}
+
+#card-1 {
+    position: absolute;
+    max-width: 75%;
+    background-color: transparent;
+    top: -20px;
+    left: -120px;
+}
+
+#card-2 {
+    position: absolute;
+    max-width: 75%;
+    background-color: transparent;
+    top: 460px;
+    left: 235px;
 }

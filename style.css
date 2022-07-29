@@ -36,6 +36,9 @@ h1 {
     justify-content: space-between;
     background-color: #ECF7FF
     }
+.circle-logo {
+    height: 4vh;
+}
 
 .nav-links {
     width: 30vw;
@@ -155,5 +158,127 @@ h3 {
     padding-left: 20px;
 }
 
+.testimonials {
+    margin-top: 200px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #292E47;
+}
 
+.testimonials-container-emojis {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonials-container-emojis > img {
+    width: 150px;
+}
+
+.testimonials-container-text {
+    width: 30%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+} 
+
+.testimonials-container-text > h3 {
+    color: #FFFFFF;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.testimonial-yellow-text {
+    color: #FFC600;
+    text-align: center;
+    white-space: wrap;
+}
+
+.client-profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.client-profile > img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+.our-services {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.our-services-boxes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.our-services-boxes {
+    background-color: #FFFFFF; 
+    width: 30%;
+    height: 350px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.our-services-boxes > img {
+    background-color: #ECF7FF;
+    width: 60px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.questions {
+    margin-top: 200px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: #FFC600;
+}
+
+.subscribe-button {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+input[type=email] {
+    border:none;
+    padding: 20px; 
+    width: 250px;
+}
+
+footer {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
 

@@ -22,6 +22,8 @@ h1 {
     line-height: 70px;
 }
 
+/* Nav bar */
+
 .nav-bar {
     z-index: 1;
     position: fixed;
@@ -34,8 +36,9 @@ h1 {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-    background-color: #ECF7FF
+    background-color: #ECF7FF;
     }
+
 .circle-logo {
     height: 4vh;
 }
@@ -57,8 +60,47 @@ h1 {
 
 /* Media queries - nav bar */
 
+@media screen and (max-width: 768px) {
+    
+    h1 {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 50px;
+    }
+    
+    body {
+        margin-left: 0px;
+        margin-right: 0px;
+        background-image: url(/project-icons/1.jpg);
+        background-color:#F2F4FC;
+    }
 
+    .nav-bar {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        justify-content: space-around;
+        background-color:#FFFFFF;
+    }
 
+    .circle-logo {
+        height: 4vh;
+
+    }
+   
+    .nav-bar-contact-button {
+        position: fixed;
+        bottom: 10px;
+        right:10px;
+    }
+   
+    .nav-links {
+        gap: 15px;
+    }
+}
+
+/* Hero section */    
 
 .hero-section {
     margin-top: 200px;
@@ -112,8 +154,47 @@ h1 {
     left: 235px;
 }
 
+/* Media queries - hero section */
+
+@media screen and (max-width: 768px) {
+
+ 
+#hero-img {
+    display: none;
+}
+
+#card-1 {
+    display: none;
+}
+
+#card-2 {
+    display: none;
+}
+
+.hero-text {
+    width: 100%;
+
+}
+
+.hero-section {
+    margin-top: 150px;
+    padding-right: 0px;
+    /* background-color:#072AC8; */
+    color:#072AC8;
+    padding: 20px;
+}
+
+.hero-img-container {
+    display: none;
+}
+
+}
+
+/* Companies section */
+
 .companies {
     margin-top: 200px;
+    width: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -121,6 +202,24 @@ h1 {
     filter: grayscale();
     background-color: transparent;
 }
+
+/* Media queries - companies */
+
+@media screen and (max-width: 768px) {
+    .companies {
+        width: 100%;
+        margin-top: 60px;
+        padding: 40px 40px 40px 0px;
+        flex-flow: row wrap ;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+
+/* Recent Projects Section */
+
 
 .recent-projects {
     margin-top: 250px;
@@ -168,6 +267,34 @@ h3 {
     gap: 50px;
     padding-left: 20px;
 }
+
+/* Media queries - recent Projects Section */
+
+@media screen and (max-width: 768px) {
+
+    .recent-projects {
+        margin-top: 60px;
+        padding: 40px;
+    }
+    
+    h3 {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 40px;
+        color:#072AC8;
+    }
+
+    .recent-projects-boxes-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .recent-projects-boxes > img {
+        width: 100%;
+    }
+}
+
+/* Testimonials section */
 
 .testimonials {
     margin-top: 200px;
@@ -227,6 +354,43 @@ h3 {
     border-radius: 50%;
 }
 
+/* Media queries - testimonials section */
+
+@media screen and (max-width: 768px) {
+
+    .client-profile {
+        display: none;
+    }
+    .testimonials {
+        flex-direction: column;
+        background-color: transparent;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+    .testimonials-container-emojis {
+        flex-direction: row;
+    }
+
+    .testimonials-container-text {
+        width: 100%;
+        align-items: center;
+        background-color: #ECF7FF;
+    }   
+    
+    .testimonials-container-text > h3 {
+        font-size: 20px; 
+        color: #072AC8;
+    }
+    
+    .testimonial-yellow-text {
+        font-size: 20px;
+        color: #43D2FF;
+    }
+}
+
+/* Services Section */
+
 .our-services {
     margin-top: 200px;
     display: flex;
@@ -265,6 +429,22 @@ h3 {
     width: 50%;  
 }
 
+/* Media queries - services */
+
+@media screen and (max-width: 768px) {
+
+    .our-services-boxes-container {
+        flex-direction: column;
+        height: 900px;
+    }
+
+    .our-services-boxes {
+        width: 100vw;
+    }
+}
+
+/* Questions section */
+
 .questions {
     margin-top: 200px;
     height: 500px;
@@ -286,6 +466,7 @@ input[type=email] {
     background-image: url(/mail.svg);
     background-repeat: no-repeat;
     background-position: left;
+    background-origin: padding-box;
     border:none;
     padding-left: 40px;
     padding-top: 20px;
@@ -293,6 +474,16 @@ input[type=email] {
     padding-right: 20px;
     width: 300px;
 }
+
+/* Media queries - Questions */
+
+@media screen and (max-width: 768px) {
+    input[type=email] {
+        width: 200px;  
+        background-origin: padding-box;
+}
+}
+/* Footer */
 
 footer {
     margin-top: 200px;
@@ -310,3 +501,16 @@ footer {
     align-items: flex-start;
 }
 
+/* Media queries: footer */
+
+@media screen and (max-width: 768px) {
+    footer {
+        margin-top: 80px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-links {
+        flex-direction: row;
+    }
+}

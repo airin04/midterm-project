@@ -78,6 +78,13 @@ a.contact-button {
     padding: 15px 32px;
     text-align: center;
     width: 145px;
+    box-shadow: inset 0 0 0 0 #43D2FF;
+    transition: ease-out 0.3s;
+}
+
+a.contact-button:hover {
+    box-shadow: inset 300px 0 0 0 #43D2FF;
+    cursor: pointer;
 }
 
 /* Media queries - nav bar */
@@ -518,6 +525,13 @@ h3 {
     padding: 15px 32px;
     text-align: center;
     width: 145px;
+    box-shadow: inset 0 0 0 0 #43D2FF;
+    transition: ease-out 0.3s;
+}
+
+.subscribe-button:hover {
+    box-shadow: inset 300px 0 0 0 #43D2FF;
+    cursor: pointer;
 }
 
 input[type=email] {

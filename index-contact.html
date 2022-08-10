@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="style-contact.css">
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
     <title>Contact Us</title>
@@ -23,26 +22,26 @@
                 </div>
             </div>
         </nav>
-        <form name="contactForm" onsubmit="return(validate())">
+        <form class="contact-form" name="contactForm" onsubmit="return(validate())">
             <h1>Contact Us</h1>
             <div class="form-input-container">
                 <div>
                     <label for="name">Full name *</label><br>
-                    <input type="text" id="name" name="name" placeholder="Enter your full name">
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
                 </div>
                 <div class="email-phone-container">
                     <div class="email-phone">
                         <label for="femail">Email</label><br>
-                        <input type="femail" id="femail" name="femail" placeholder="Enter your email address">
+                        <input type="femail" id="femail" name="femail" placeholder="Enter your email address" required>
                     </div>
                     <div class="email-phone">
                         <label for="phone">Phone</label><br>
-                        <input type="phone" id="phone" name="phone" placeholder="Enter your phone number">
+                        <input type="phone" id="phone" name="phone" placeholder="Enter your phone number" required>
                     </div>
                 </div>
                 <div>
                     <label for="message">Message</label><br>
-                    <textarea id="message" name="message" rows="5" cols="50" placeholder="Write your message here..."></textarea>
+                    <textarea id="message" name="message" rows="5" cols="50" placeholder="Write your message here..." required></textarea>
                 </div>
                 <div>
                     <input type="submit" name="submit">
